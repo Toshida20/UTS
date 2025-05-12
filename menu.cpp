@@ -67,7 +67,7 @@ void mKedua() {
         cout << "\n";
     }
     cout << "\nTekan [E] untuk kembali ke menu utama...";
-    while (getch() != 'e');
+    while (getch() != 'e' && getch() != 'E');
 }
 //LOGIKA SORTIR NILAI
 void tukar(int* a, int* b) {
@@ -115,7 +115,7 @@ void mKetiga() {
         cout << "Pilih [E] untuk kembali ke menu utama...\n";
         cout << "Pilih salahsatu opsi: ";
         cin >> pilih;
-        //codingan sortir kecil ke besar dan sebaliknya (DONEEEE)
+        //codingan sortir kecil ke besar dan sebaliknya (DONEEEEEEEEEEE)
         if (pilih == '1') {
             kecilKeBesar(nilai, n);
             cout << "Nilai berhasil disortir dari kecil ke besar:\n";
