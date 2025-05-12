@@ -58,7 +58,7 @@ void mPertama() {
 void mKedua() {
     Bersih();
     if (n == 0) {
-        cout << "Nilai masih kosong. Silakan masukkan nilai dulu pada menu 1\n";
+        cout << "Array masih kosong. Silakan masukkan nilai array terlebih dulu pada menu 1\n";
     } else {
         cout << "Isi array saat ini:\n";
         for (int i = 0; i < n; i++) {
@@ -100,7 +100,7 @@ void besarKeKecil(int data[], int Jum) {
 void mKetiga() {
     if (n == 0) {
         Bersih();
-        cout << "Nilai masih kosong. Tidak ada yang bisa disortir.\n";
+        cout << "Array masih kosong. Tidak ada yang bisa disortir.\n";
         cout << "\nTekan [E] untuk kembali ke menu utama...";
         while (getch() != 'e' && getch() != 'E');
         return;
@@ -118,13 +118,13 @@ void mKetiga() {
         //codingan sortir kecil ke besar dan sebaliknya (DONEEEEEEEEEEE)
         if (pilih == '1') {
             kecilKeBesar(nilai, n);
-            cout << "Nilai berhasil disortir dari kecil ke besar:\n";
+            cout << "Array berhasil disortir dari kecil ke besar:\n";
             for (int i = 0; i < n; i++) cout << nilai[i] << " ";
             cout << "\n\nTekan [E] untuk kembali ke menu sortir...";
             while (getch() != 'e' && getch() != 'E');
         } else if (pilih == '2') {
             besarKeKecil(nilai, n);
-            cout << "Nilai berhasil disortir dari besar ke kecil:\n";
+            cout << "Array berhasil disortir dari besar ke kecil:\n";
             for (int i = 0; i < n; i++) cout << nilai[i] << " ";
             cout << "\n\nTekan [E] untuk kembali ke menu sortir...";
             while (getch() != 'e' && getch() != 'E');
